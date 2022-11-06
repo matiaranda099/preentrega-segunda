@@ -1,9 +1,18 @@
 import "./cartWidget.css"
+import React, {useContext} from "react"
+import { useCartContext } from "../../context/CartContext"
 
 
 export const CartWidget = () =>{
+    const  {productosTotales} = useCartContext();
+
+
     return(
-        <i className="bi bi-cart-dash-fill cart_widget"></i>
+        <div>
+            <i className="bi bi-cart-dash-fill cart_widget"></i>
+            <span>{productosTotales() || ''}</span>
+
+        </div>
 
     )
 }

@@ -13,16 +13,16 @@ export const NavBar = () => {
                 </div>
                 <ul className="class_list">
                     <li>
-                        <NavLink to='/categoria/PS4'>Juegos de Ps4</NavLink>
+                        <NavLink to='/categoria/PS4'>JUEGOS PS4</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/categoria/PS5'>Juegos de Ps5</NavLink>
+                        <NavLink to='/categoria/PS5'>JUEGOS PS5</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/carrito/Carrito'>Carrito</NavLink>
+                        <NavLink to='/carrito/Carrito'><CartWidget/></NavLink>
                     </li>
                 </ul>
-                <CartWidget/>
+                
             </nav>
         </div>
     )
